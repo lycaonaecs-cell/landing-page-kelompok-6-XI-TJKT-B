@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SkyNet Solusindo — Solusi teknologi informasi dan infrastruktur jaringan andal di Surakarta, Jawa Tengah.">
+  <title>SkyNet Solusindo — Beyond Connection</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=global-live">
+</head>
+<body>
+
+  <!-- Global Live Wallpaper Background (Active across all sections, masked at footer) -->
+  <canvas id="globalLiveCanvas" class="global-live-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========== HEADER & NAVIGATION ========== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <!-- Logo -->
+      <a href="#home" class="header__logo">
+        <span class="logo__icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="8" fill="url(#logo-grad)"/>
+            <path d="M8 20L12 12L16 18L20 10L24 20" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="2" fill="white" opacity="0.6"/>
+            <circle cx="20" cy="10" r="2" fill="white" opacity="0.6"/>
+            <defs>
+              <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32">
+                <stop stop-color="#2563eb"/>
+                <stop offset="1" stop-color="#0a1628"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <div class="logo__text">
+          <span class="logo__name">SkyNet<strong>Solusindo</strong></span>
+        </div>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="header__nav" id="navbar">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link active">Home</a></li>
+          <li><a href="#layanan" class="nav__link">Layanan</a></li>
+          <li><a href="#proses" class="nav__link">Proses</a></li>
+          <li><a href="#jaringan" class="nav__link">Topologi</a></li>
+          <li><a href="#portofolio" class="nav__link">Portofolio</a></li>
+          <li><a href="#kontak" class="nav__link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA Button -->
+      <a href="#kontak" class="btn btn--primary header__cta">Hubungi Kami</a>
+
+      <!-- Hamburger Menu -->
+      <button class="header__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <!-- Background decorative elements -->
+    <div class="hero__bg">
+      <canvas id="liveWallpaperCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__gradient"></div>
+      <div class="hero__grid"></div>
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__orb hero__orb--3"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <!-- Left: Content -->
+      <div class="hero__content">
+        <span class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          IT Solutions &amp; Network Infrastructure
+        </span>
+
+        <h1 class="hero__title">
+          Membangun <span class="text-gradient">Koneksi</span>,
+          Menggerakkan <span class="text-gradient">Bisnis</span> Anda.
+        </h1>
+
+        <p class="hero__subtitle">
+          SkyNet Solusindo menghadirkan solusi teknologi informasi dan infrastruktur jaringan yang andal untuk mendukung kebutuhan bisnis dan konektivitas Anda.
+        </p>
+
+        <div class="hero__actions">
+          <a href="https://wa.me/6285700522135?text=Halo%20SkyNet%20Solusindo%2C%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20IT%20dan%20jaringan." target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg" id="btn-konsultasi">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            Konsultasi Gratis
+          </a>
+          <a href="#layanan" class="btn btn--outline btn--lg">
+            Lihat Layanan
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
+
+        <p class="hero__slogan">"Beyond Connection. We Build Your Digital Future."</p>
+
+        <!-- Stats -->
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__number" data-count="150">0</span><span class="stat__suffix">+</span>
+            <span class="stat__label">Klien Aktif</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <span class="stat__number" data-count="300">0</span><span class="stat__suffix">+</span>
+            <span class="stat__label">Proyek Selesai</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <span class="stat__number" data-count="8">0</span>
+            <span class="stat__label">Tahun Pengalaman</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Illustration -->
+      <div class="hero__visual">
+        <div class="hero__illustration">
+          <!-- Server Rack SVG Illustration -->
+          <svg class="illustration__svg" viewBox="0 0 500 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background glow -->
+            <ellipse cx="250" cy="440" rx="200" ry="30" fill="url(#glow)" opacity="0.3"/>
+
+            <!-- Server Rack Body -->
+            <rect x="120" y="60" width="260" height="360" rx="12" fill="#0f1d33" stroke="#1e3a5f" stroke-width="1.5"/>
+            <rect x="120" y="60" width="260" height="360" rx="12" fill="url(#rack-grad)" opacity="0.5"/>
+
+            <!-- Rack top detail -->
+            <rect x="130" y="65" width="240" height="8" rx="2" fill="#1a2d4a"/>
+
+            <!-- Server Unit 1 -->
+            <g class="server-unit" data-delay="0">
+              <rect x="140" y="90" width="220" height="50" rx="6" fill="#0d1929" stroke="#1e3a5f" stroke-width="1"/>
+              <rect x="155" y="102" width="60" height="6" rx="3" fill="#2563eb" opacity="0.8"/>
+              <rect x="155" y="114" width="40" height="6" rx="3" fill="#1e3a5f"/>
+              <circle cx="340" cy="108" r="4" fill="#22c55e" class="led led--green"/>
+              <circle cx="340" cy="122" r="4" fill="#22c55e" class="led led--green" style="animation-delay: 0.5s"/>
+              <circle cx="354" cy="108" r="4" fill="#2563eb" class="led led--blue"/>
+              <rect x="230" y="100" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="240" y="100" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="250" y="100" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="260" y="100" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="270" y="100" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="280" y="100" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="290" y="100" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="300" y="100" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="310" y="100" width="2" height="24" rx="1" fill="#1e3a5f"/>
+            </g>
+
+            <!-- Server Unit 2 -->
+            <g class="server-unit" data-delay="200">
+              <rect x="140" y="150" width="220" height="50" rx="6" fill="#0d1929" stroke="#1e3a5f" stroke-width="1"/>
+              <rect x="155" y="162" width="50" height="6" rx="3" fill="#60a5fa" opacity="0.8"/>
+              <rect x="155" y="174" width="35" height="6" rx="3" fill="#1e3a5f"/>
+              <circle cx="340" cy="168" r="4" fill="#22c55e" class="led led--green" style="animation-delay: 0.3s"/>
+              <circle cx="340" cy="182" r="4" fill="#f59e0b" class="led led--amber"/>
+              <circle cx="354" cy="168" r="4" fill="#2563eb" class="led led--blue" style="animation-delay: 0.7s"/>
+              <rect x="230" y="160" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="240" y="160" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="250" y="160" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="260" y="160" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="270" y="160" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="280" y="160" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="290" y="160" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="300" y="160" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="310" y="160" width="2" height="24" rx="1" fill="#1e3a5f"/>
+            </g>
+
+            <!-- Server Unit 3 -->
+            <g class="server-unit" data-delay="400">
+              <rect x="140" y="210" width="220" height="50" rx="6" fill="#0d1929" stroke="#1e3a5f" stroke-width="1"/>
+              <rect x="155" y="222" width="55" height="6" rx="3" fill="#2563eb" opacity="0.8"/>
+              <rect x="155" y="234" width="45" height="6" rx="3" fill="#1e3a5f"/>
+              <circle cx="340" cy="228" r="4" fill="#22c55e" class="led led--green" style="animation-delay: 0.6s"/>
+              <circle cx="340" cy="242" r="4" fill="#22c55e" class="led led--green" style="animation-delay: 0.9s"/>
+              <circle cx="354" cy="228" r="4" fill="#2563eb" class="led led--blue" style="animation-delay: 0.2s"/>
+              <rect x="230" y="220" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="240" y="220" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="250" y="220" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="260" y="220" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="270" y="220" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="280" y="220" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="290" y="220" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="300" y="220" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="310" y="220" width="2" height="24" rx="1" fill="#1e3a5f"/>
+            </g>
+
+            <!-- Server Unit 4 -->
+            <g class="server-unit" data-delay="600">
+              <rect x="140" y="270" width="220" height="50" rx="6" fill="#0d1929" stroke="#1e3a5f" stroke-width="1"/>
+              <rect x="155" y="282" width="48" height="6" rx="3" fill="#60a5fa" opacity="0.8"/>
+              <rect x="155" y="294" width="30" height="6" rx="3" fill="#1e3a5f"/>
+              <circle cx="340" cy="288" r="4" fill="#22c55e" class="led led--green" style="animation-delay: 1s"/>
+              <circle cx="340" cy="302" r="4" fill="#22c55e" class="led led--green" style="animation-delay: 0.4s"/>
+              <circle cx="354" cy="288" r="4" fill="#2563eb" class="led led--blue" style="animation-delay: 1.2s"/>
+              <rect x="230" y="280" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="240" y="280" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="250" y="280" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="260" y="280" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="270" y="280" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="280" y="280" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="290" y="280" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="300" y="280" width="2" height="24" rx="1" fill="#1e3a5f"/>
+              <rect x="310" y="280" width="2" height="24" rx="1" fill="#1e3a5f"/>
+            </g>
+
+            <!-- Server Unit 5 (storage) -->
+            <g class="server-unit" data-delay="800">
+              <rect x="140" y="330" width="220" height="50" rx="6" fill="#0d1929" stroke="#1e3a5f" stroke-width="1"/>
+              <rect x="155" y="340" width="30" height="30" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="0.5"/>
+              <rect x="190" y="340" width="30" height="30" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="0.5"/>
+              <rect x="225" y="340" width="30" height="30" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="0.5"/>
+              <rect x="260" y="340" width="30" height="30" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="0.5"/>
+              <circle cx="340" cy="348" r="4" fill="#22c55e" class="led led--green" style="animation-delay: 0.1s"/>
+              <circle cx="354" cy="348" r="4" fill="#22c55e" class="led led--green" style="animation-delay: 0.8s"/>
+              <circle cx="340" cy="362" r="4" fill="#2563eb" class="led led--blue" style="animation-delay: 1.5s"/>
+            </g>
+
+            <!-- Network cables (decorative lines from rack) -->
+            <path d="M380 115 Q420 115 430 85 Q440 55 470 50" stroke="#2563eb" stroke-width="1.5" fill="none" opacity="0.4" class="cable"/>
+            <path d="M380 175 Q430 175 450 140 Q460 120 490 110" stroke="#60a5fa" stroke-width="1.5" fill="none" opacity="0.3" class="cable"/>
+            <path d="M380 295 Q420 295 440 330 Q450 350 480 360" stroke="#2563eb" stroke-width="1.5" fill="none" opacity="0.4" class="cable"/>
+
+            <!-- Floating network nodes -->
+            <g class="float-node" style="animation-delay: 0s">
+              <circle cx="470" cy="50" r="12" fill="#0d1929" stroke="#2563eb" stroke-width="1.5"/>
+              <circle cx="470" cy="50" r="4" fill="#2563eb" opacity="0.8"/>
+            </g>
+            <g class="float-node" style="animation-delay: 0.5s">
+              <circle cx="490" cy="110" r="10" fill="#0d1929" stroke="#60a5fa" stroke-width="1.5"/>
+              <circle cx="490" cy="110" r="3.5" fill="#60a5fa" opacity="0.8"/>
+            </g>
+            <g class="float-node" style="animation-delay: 1s">
+              <circle cx="480" cy="360" r="11" fill="#0d1929" stroke="#2563eb" stroke-width="1.5"/>
+              <circle cx="480" cy="360" r="4" fill="#2563eb" opacity="0.8"/>
+            </g>
+
+            <!-- Left side: Router/Switch -->
+            <g class="float-node" style="animation-delay: 0.3s">
+              <rect x="30" y="170" width="60" height="40" rx="6" fill="#0d1929" stroke="#1e3a5f" stroke-width="1.5"/>
+              <circle cx="50" cy="185" r="3" fill="#22c55e" class="led led--green" style="animation-delay: 1.3s"/>
+              <circle cx="62" cy="185" r="3" fill="#2563eb" class="led led--blue" style="animation-delay: 0.6s"/>
+              <circle cx="74" cy="185" r="3" fill="#60a5fa" class="led led--blue" style="animation-delay: 0.9s"/>
+              <rect x="45" y="195" width="30" height="4" rx="2" fill="#1e3a5f"/>
+            </g>
+
+            <!-- Cable from router to rack -->
+            <path d="M90 190 Q110 190 120 170" stroke="#60a5fa" stroke-width="1.5" fill="none" opacity="0.3" class="cable"/>
+            <path d="M90 190 Q115 200 120 240" stroke="#2563eb" stroke-width="1.5" fill="none" opacity="0.4" class="cable"/>
+
+            <!-- WiFi signal (decorative) -->
+            <g class="wifi-signal" opacity="0.3">
+              <path d="M55 155 Q60 145 65 155" stroke="#60a5fa" stroke-width="1.5" fill="none"/>
+              <path d="M48 148 Q60 133 72 148" stroke="#60a5fa" stroke-width="1.5" fill="none"/>
+              <path d="M41 141 Q60 121 79 141" stroke="#60a5fa" stroke-width="1.5" fill="none"/>
+            </g>
+
+            <!-- Gradients -->
+            <defs>
+              <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+                <stop stop-color="#2563eb" stop-opacity="0.4"/>
+                <stop offset="1" stop-color="#2563eb" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="rack-grad" x1="120" y1="60" x2="380" y2="420">
+                <stop stop-color="#2563eb" stop-opacity="0.08"/>
+                <stop offset="1" stop-color="#0a1628" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+          </svg>
+
+          <!-- Floating particles -->
+          <div class="hero__particles">
+            <span class="particle" style="--x: 10%; --y: 20%; --duration: 6s; --delay: 0s"></span>
+            <span class="particle" style="--x: 80%; --y: 30%; --duration: 8s; --delay: 1s"></span>
+            <span class="particle" style="--x: 30%; --y: 70%; --duration: 7s; --delay: 2s"></span>
+            <span class="particle" style="--x: 70%; --y: 80%; --duration: 5s; --delay: 0.5s"></span>
+            <span class="particle" style="--x: 50%; --y: 10%; --duration: 9s; --delay: 1.5s"></span>
+            <span class="particle" style="--x: 90%; --y: 60%; --duration: 6s; --delay: 3s"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LAYANAN SECTION ========== -->
+  <section class="section section--layanan" id="layanan">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__badge">Layanan Kami</span>
+        <h2 class="section__title">Solusi Lengkap untuk <span class="text-gradient">Kebutuhan IT</span> Anda</h2>
+        <p class="section__subtitle">Kami menyediakan berbagai layanan teknologi informasi dan jaringan komputer yang dirancang khusus untuk mendukung pertumbuhan bisnis Anda.</p>
+      </div>
+
+      <div class="services__grid">
+        <!-- Service Card 1 -->
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="40" height="32" rx="4" stroke="currentColor" stroke-width="2.5"/>
+              <line x1="24" y1="8" x2="24" y2="40" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+              <line x1="4" y1="24" x2="44" y2="24" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+              <circle cx="14" cy="16" r="2.5" fill="currentColor" opacity="0.7"/>
+              <circle cx="34" cy="16" r="2.5" fill="currentColor" opacity="0.7"/>
+              <circle cx="14" cy="32" r="2.5" fill="currentColor" opacity="0.7"/>
+              <circle cx="34" cy="32" r="2.5" fill="currentColor" opacity="0.7"/>
+              <path d="M14 16L24 24L34 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+              <path d="M14 32L24 24L34 32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Network Installation</h3>
+          <p class="service-card__desc">Instalasi jaringan LAN, Fiber Optic, dan infrastruktur jaringan untuk kebutuhan kantor maupun perusahaan.</p>
+          <span class="service-card__link">
+            Selengkapnya
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </article>
+
+        <!-- Service Card 2 -->
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="6" width="36" height="36" rx="6" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2" opacity="0.6"/>
+              <circle cx="24" cy="24" r="3" fill="currentColor"/>
+              <line x1="24" y1="6" x2="24" y2="16" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+              <line x1="24" y1="32" x2="24" y2="42" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+              <line x1="6" y1="24" x2="16" y2="24" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+              <line x1="32" y1="24" x2="42" y2="24" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+              <path d="M14 14L18.5 18.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+              <path d="M29.5 29.5L34 34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+              <path d="M34 14L29.5 18.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+              <path d="M18.5 29.5L14 34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Network Configuration</h3>
+          <p class="service-card__desc">Konfigurasi MikroTik, manajemen bandwidth, routing, dan pengaturan jaringan untuk konektivitas optimal.</p>
+          <span class="service-card__link">
+            Selengkapnya
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </article>
+
+        <!-- Service Card 3 -->
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4L24 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M24 36L24 44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="12" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M18 24L22 28L30 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 10L14.5 14.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+              <path d="M33.5 33.5L38 38" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+              <path d="M4 24H12" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+              <path d="M36 24H44" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Maintenance &amp; Repair</h3>
+          <p class="service-card__desc">Pemeriksaan, perbaikan, dan pemeliharaan jaringan untuk menjaga kestabilan koneksi dan performa perangkat.</p>
+          <span class="service-card__link">
+            Selengkapnya
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </article>
+
+        <!-- Service Card 4 -->
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="4" width="36" height="28" rx="4" stroke="currentColor" stroke-width="2.5"/>
+              <line x1="18" y1="32" x2="18" y2="38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="30" y1="32" x2="30" y2="38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="14" y1="38" x2="34" y2="38" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M14 14H22" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+              <path d="M14 19H28" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+              <path d="M14 24H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+              <rect x="30" y="12" width="6" height="6" rx="1" fill="currentColor" opacity="0.2"/>
+              <rect x="30" y="20" width="6" height="6" rx="1" fill="currentColor" opacity="0.15"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Website Development</h3>
+          <p class="service-card__desc">Pembuatan website profil perusahaan, landing page, dan website promosi bisnis dengan desain modern dan responsif.</p>
+          <span class="service-card__link">
+            Selengkapnya
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW WE WORK SECTION ========== -->
+  <section class="section section--proses" id="proses">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__badge">Metodologi Kerja</span>
+        <h2 class="section__title">Bagaimana Kami <span class="text-gradient">Bekerja untuk Anda</span></h2>
+        <p class="section__subtitle">Empat tahapan terstruktur yang kami terapkan untuk menjamin implementasi infrastruktur IT yang tepat sasaran, aman, dan berkesinambungan.</p>
+      </div>
+
+      <div class="process__timeline">
+        <div class="process__track" aria-hidden="true"></div>
+
+        <!-- Step 1 -->
+        <div class="process-card" data-step="1">
+          <div class="process-card__header">
+            <span class="process-card__number">01</span>
+            <div class="process-card__icon">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                <line x1="9" y1="9" x2="15" y2="9"/>
+                <line x1="9" y1="13" x2="13" y2="13"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="process-card__title">Consultation</h3>
+          <p class="process-card__desc">Diskusi mendalam untuk memahami kebutuhan spesifik perusahaan, pemetaan kendala jaringan, dan target transformasi digital bisnis Anda.</p>
+          <div class="process-card__pill">Analisis Awal &amp; Brainstorming</div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-card" data-step="2">
+          <div class="process-card__header">
+            <span class="process-card__number">02</span>
+            <div class="process-card__icon">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="24" height="24" rx="4"/>
+                <line x1="10" y1="10" x2="22" y2="10"/>
+                <line x1="10" y1="16" x2="18" y2="16"/>
+                <line x1="10" y1="22" x2="14" y2="22"/>
+                <circle cx="20" cy="20" r="2"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="process-card__title">Planning &amp; Analysis</h3>
+          <p class="process-card__desc">Survei lokasi, perancangan topologi jaringan yang presisi, kalkulasi kapasitas bandwidth, dan pemilihan spesifikasi perangkat keras terbaik.</p>
+          <div class="process-card__pill">Desain Arsitektur &amp; Estimasi</div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-card" data-step="3">
+          <div class="process-card__header">
+            <span class="process-card__number">03</span>
+            <div class="process-card__icon">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="process-card__title">Installation &amp; Configuration</h3>
+          <p class="process-card__desc">Pemasangan fisik kabel terstruktur, rack server, setting routing MikroTik, konfigurasi firewall keamanan, dan integrasi perangkat end-user.</p>
+          <div class="process-card__pill">Eksekusi Fisik &amp; Routing</div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-card" data-step="4">
+          <div class="process-card__header">
+            <span class="process-card__number">04</span>
+            <div class="process-card__icon">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="process-card__title">Testing &amp; Maintenance</h3>
+          <p class="process-card__desc">Stress-test kestabilan koneksi, audit keamanan komprehensif, penyerahan dokumentasi teknis, dan pemeliharaan proaktif berkala.</p>
+          <div class="process-card__pill">Quality Assurance &amp; Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INTERACTIVE NETWORK MAP & SYSTEM STATUS ========== -->
+  <section class="section section--jaringan" id="jaringan">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__badge">Teknologi Eksklusif</span>
+        <h2 class="section__title">Interactive <span class="text-gradient">Network Architecture</span></h2>
+        <p class="section__subtitle">Simulasi topologi digital terintegrasi SkyNet Solusindo yang menghubungkan Internet publik ke pusat data server, router pengelola, hingga workstation komputer pengguna.</p>
+      </div>
+
+      <!-- SKYNET SYSTEM STATUS WIDGET -->
+      <div class="system-status-widget" id="systemStatusWidget">
+        <div class="system-status__main">
+          <div class="status-indicator">
+            <span class="status-indicator__beacon"></span>
+            <span class="status-indicator__dot"></span>
+          </div>
+          <div class="status-info">
+            <span class="status-info__badge">SKYNET SYSTEM STATUS</span>
+            <span class="status-info__label">SKYNET SYSTEM ONLINE</span>
+          </div>
+        </div>
+
+        <div class="system-status__metrics">
+          <div class="status-metric">
+            <span class="status-metric__title">BACKBONE</span>
+            <span class="status-metric__val text-gradient">OPERATIONAL</span>
+          </div>
+          <div class="status-metric">
+            <span class="status-metric__title">LATENCY</span>
+            <span class="status-metric__val" id="telemetryLatency">1.4 ms</span>
+          </div>
+          <div class="status-metric">
+            <span class="status-metric__title">PACKET LOSS</span>
+            <span class="status-metric__val">0.00%</span>
+          </div>
+          <div class="status-metric">
+            <span class="status-metric__title">ENCRYPTION</span>
+            <span class="status-metric__val">AES-256 GCM</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- NETWORK MAP INTERACTIVE CANVAS/SVG -->
+      <div class="network-map-container">
+        <div class="network-map__toolbar">
+          <div class="network-map__legend">
+            <span class="legend-dot legend-dot--wan"></span> WAN Internet
+            <span class="legend-dot legend-dot--core"></span> Core Router
+            <span class="legend-dot legend-dot--server"></span> Data Server
+            <span class="legend-dot legend-dot--client"></span> Komputer Client
+          </div>
+          <div class="network-map__tip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            Klik atau arahkan kursor ke node untuk melihat parameter teknis
+          </div>
+        </div>
+
+        <div class="network-map__viewport">
+          <svg class="network-map__svg" viewBox="0 0 900 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background grid & glow -->
+            <defs>
+              <linearGradient id="net-cable-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#2563eb" stop-opacity="0.4"/>
+                <stop offset="50%" stop-color="#60a5fa" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#2563eb" stop-opacity="0.4"/>
+              </linearGradient>
+              <filter id="node-glow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="8" result="blur" />
+                <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+              </filter>
+            </defs>
+
+            <!-- CONNECTION LINES WITH ANIMATED DATA PULSE -->
+            <!-- Link 1: Internet (120, 190) -> Router (360, 190) -->
+            <path id="path-wan-router" d="M 120 190 L 360 190" stroke="#1e3a5f" stroke-width="3" stroke-linecap="round"/>
+            <path d="M 120 190 L 360 190" stroke="url(#net-cable-grad)" stroke-width="2.5" stroke-dasharray="10 14" class="data-pulse-line"/>
+
+            <!-- Link 2: Router (360, 190) -> Server (580, 100) -->
+            <path id="path-router-server" d="M 360 190 C 440 190 480 100 580 100" stroke="#1e3a5f" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <path d="M 360 190 C 440 190 480 100 580 100" stroke="url(#net-cable-grad)" stroke-width="2.5" stroke-dasharray="10 14" class="data-pulse-line data-pulse-line--delay1" fill="none"/>
+
+            <!-- Link 3: Router (360, 190) -> Komputer Client (580, 280) -->
+            <path id="path-router-client" d="M 360 190 C 440 190 480 280 580 280" stroke="#1e3a5f" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <path d="M 360 190 C 440 190 480 280 580 280" stroke="url(#net-cable-grad)" stroke-width="2.5" stroke-dasharray="10 14" class="data-pulse-line data-pulse-line--delay2" fill="none"/>
+
+            <!-- Link 4: Server (580, 100) -> Komputer Client (580, 280) Local Sync -->
+            <path d="M 580 100 L 580 280" stroke="#1e3a5f" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 6" opacity="0.6"/>
+            <path d="M 580 100 L 580 280" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 8" class="data-pulse-line data-pulse-line--vert" opacity="0.7"/>
+
+            <!-- Link 5: Komputer (580, 280) -> Multi Client Sub-PCs (780, 240) & (780, 320) -->
+            <path d="M 580 280 C 660 280 700 240 780 240" stroke="#1e3a5f" stroke-width="2" fill="none"/>
+            <path d="M 580 280 C 660 280 700 320 780 320" stroke="#1e3a5f" stroke-width="2" fill="none"/>
+            <path d="M 580 280 C 660 280 700 240 780 240" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="6 8" class="data-pulse-line" fill="none"/>
+            <path d="M 580 280 C 660 280 700 320 780 320" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="6 8" class="data-pulse-line data-pulse-line--delay1" fill="none"/>
+
+            <!-- DATA PACKET ANIMATED ORBS -->
+            <circle r="4" fill="#60a5fa" class="pulse-particle">
+              <animateMotion dur="2.4s" repeatCount="indefinite" path="M 120 190 L 360 190"/>
+            </circle>
+            <circle r="4" fill="#38bdf8" class="pulse-particle">
+              <animateMotion dur="2s" repeatCount="indefinite" path="M 360 190 C 440 190 480 100 580 100"/>
+            </circle>
+            <circle r="4" fill="#22c55e" class="pulse-particle">
+              <animateMotion dur="2.2s" repeatCount="indefinite" path="M 360 190 C 440 190 480 280 580 280"/>
+            </circle>
+
+            <!-- ================= NODE 1: INTERNET ================= -->
+            <g class="net-node net-node--interactive is-active" id="node-internet" data-node="internet" transform="translate(120, 190)" tabindex="0" role="button" aria-label="Node Internet">
+              <circle r="46" fill="rgba(37, 99, 235, 0.1)" class="net-node__halo"/>
+              <circle r="36" fill="#0d1929" stroke="#2563eb" stroke-width="2.5" class="net-node__circle"/>
+              <!-- Cloud / Globe icon -->
+              <g transform="translate(-14, -14)" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                <circle cx="14" cy="14" r="10"/>
+                <path d="M4 14h20M14 4a14 14 0 0 1 0 20M14 4a14 14 0 0 0 0 20"/>
+              </g>
+              <text y="58" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700" font-family="'Plus Jakarta Sans', sans-serif">INTERNET</text>
+              <text y="74" text-anchor="middle" fill="#60a5fa" font-size="11" font-weight="500" font-family="'Plus Jakarta Sans', sans-serif">WAN Backbone</text>
+            </g>
+
+            <!-- ================= NODE 2: ROUTER ================= -->
+            <g class="net-node net-node--interactive" id="node-router" data-node="router" transform="translate(360, 190)" tabindex="0" role="button" aria-label="Node Router">
+              <circle r="46" fill="rgba(37, 99, 235, 0.1)" class="net-node__halo"/>
+              <circle r="36" fill="#0d1929" stroke="#2563eb" stroke-width="2.5" class="net-node__circle"/>
+              <!-- Router Icon -->
+              <g transform="translate(-14, -14)" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                <rect x="2" y="10" width="24" height="12" rx="3"/>
+                <circle cx="7" cy="16" r="1" fill="#22c55e"/>
+                <circle cx="12" cy="16" r="1" fill="#60a5fa"/>
+                <circle cx="17" cy="16" r="1" fill="#22c55e"/>
+                <line x1="7" y1="10" x2="7" y2="4"/>
+                <line x1="21" y1="10" x2="21" y2="4"/>
+              </g>
+              <text y="58" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700" font-family="'Plus Jakarta Sans', sans-serif">ROUTER</text>
+              <text y="74" text-anchor="middle" fill="#60a5fa" font-size="11" font-weight="500" font-family="'Plus Jakarta Sans', sans-serif">MikroTik Gateway</text>
+            </g>
+
+            <!-- ================= NODE 3: SERVER ================= -->
+            <g class="net-node net-node--interactive" id="node-server" data-node="server" transform="translate(580, 100)" tabindex="0" role="button" aria-label="Node Server">
+              <circle r="46" fill="rgba(37, 99, 235, 0.1)" class="net-node__halo"/>
+              <circle r="36" fill="#0d1929" stroke="#2563eb" stroke-width="2.5" class="net-node__circle"/>
+              <!-- Server Stack Icon -->
+              <g transform="translate(-14, -14)" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                <rect x="3" y="4" width="22" height="7" rx="2"/>
+                <rect x="3" y="14" width="22" height="7" rx="2"/>
+                <circle cx="7" cy="7.5" r="1" fill="#22c55e"/>
+                <circle cx="7" cy="17.5" r="1" fill="#22c55e"/>
+                <line x1="14" y1="7.5" x2="21" y2="7.5"/>
+                <line x1="14" y1="17.5" x2="21" y2="17.5"/>
+              </g>
+              <text y="58" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700" font-family="'Plus Jakarta Sans', sans-serif">SERVER</text>
+              <text y="74" text-anchor="middle" fill="#60a5fa" font-size="11" font-weight="500" font-family="'Plus Jakarta Sans', sans-serif">Data Center Core</text>
+            </g>
+
+            <!-- ================= NODE 4: KOMPUTER ================= -->
+            <g class="net-node net-node--interactive" id="node-computer" data-node="computer" transform="translate(580, 280)" tabindex="0" role="button" aria-label="Node Komputer">
+              <circle r="46" fill="rgba(37, 99, 235, 0.1)" class="net-node__halo"/>
+              <circle r="36" fill="#0d1929" stroke="#2563eb" stroke-width="2.5" class="net-node__circle"/>
+              <!-- PC / Monitor Icon -->
+              <g transform="translate(-14, -14)" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                <rect x="3" y="4" width="22" height="15" rx="2"/>
+                <line x1="9" y1="23" x2="19" y2="23"/>
+                <line x1="14" y1="19" x2="14" y2="23"/>
+              </g>
+              <text y="58" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700" font-family="'Plus Jakarta Sans', sans-serif">KOMPUTER</text>
+              <text y="74" text-anchor="middle" fill="#60a5fa" font-size="11" font-weight="500" font-family="'Plus Jakarta Sans', sans-serif">Client Workstation</text>
+            </g>
+
+            <!-- SUB-CLIENT TERMINALS -->
+            <g transform="translate(780, 240)" opacity="0.85">
+              <circle r="22" fill="#0d1929" stroke="#1e3a5f" stroke-width="1.5"/>
+              <g transform="translate(-8, -8)" stroke="#60a5fa" stroke-width="1.5" fill="none">
+                <rect x="2" y="2" width="12" height="9" rx="1"/>
+                <line x1="5" y1="14" x2="11" y2="14"/>
+                <line x1="8" y1="11" x2="8" y2="14"/>
+              </g>
+              <text y="36" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="'Plus Jakarta Sans', sans-serif">PC Terminal 1</text>
+            </g>
+
+            <g transform="translate(780, 320)" opacity="0.85">
+              <circle r="22" fill="#0d1929" stroke="#1e3a5f" stroke-width="1.5"/>
+              <g transform="translate(-8, -8)" stroke="#60a5fa" stroke-width="1.5" fill="none">
+                <rect x="2" y="2" width="12" height="9" rx="1"/>
+                <line x1="5" y1="14" x2="11" y2="14"/>
+                <line x1="8" y1="11" x2="8" y2="14"/>
+              </g>
+              <text y="36" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="'Plus Jakarta Sans', sans-serif">PC Terminal 2</text>
+            </g>
+          </svg>
+        </div>
+
+        <!-- DYNAMIC NODE DETAIL HUD PANEL -->
+        <div class="network-hud" id="networkHud">
+          <div class="network-hud__header">
+            <div class="hud-tag">NODE INSPECTOR</div>
+            <h4 class="network-hud__title" id="hudNodeTitle">Internet (WAN Gateway)</h4>
+            <span class="hud-status-badge hud-status-badge--live">LIVE CONNECTION</span>
+          </div>
+
+          <div class="network-hud__grid">
+            <div class="hud-item">
+              <span class="hud-item__label">Peran Sistem:</span>
+              <span class="hud-item__value" id="hudNodeRole">Penyedia konektivitas global fiber optic kecepatan tinggi dengan multi-upstream redundancy.</span>
+            </div>
+            <div class="hud-item">
+              <span class="hud-item__label">Protokol / Standar:</span>
+              <span class="hud-item__value" id="hudNodeProtocol">BGP, IPv4 / IPv6 Dual-Stack, DNSSEC</span>
+            </div>
+            <div class="hud-item">
+              <span class="hud-item__label">Kecepatan &amp; Kapasitas:</span>
+              <span class="hud-item__value" id="hudNodeSpeed">10 Gbps Symmetrical Uplink</span>
+            </div>
+            <div class="hud-item">
+              <span class="hud-item__label">Status Keamanan:</span>
+              <span class="hud-item__value" id="hudNodeSecurity">Mitigasi Anti-DDoS &amp; Hardware Firewall Layer 7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE US ========== -->
+  <section class="section section--whyus" id="whyus">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__badge">Mengapa Kami?</span>
+        <h2 class="section__title">Keunggulan <span class="text-gradient">SkyNet Solusindo</span></h2>
+        <p class="section__subtitle">Kami berkomitmen memberikan layanan terbaik untuk mendukung keberhasilan digital bisnis Anda.</p>
+      </div>
+
+      <div class="whyus__grid">
+        <!-- Advantage 1 -->
+        <div class="whyus-card">
+          <div class="whyus-card__number">01</div>
+          <div class="whyus-card__icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="14" r="6" stroke="currentColor" stroke-width="2"/>
+              <path d="M8 34C8 27.4 13.4 22 20 22C26.6 22 32 27.4 32 34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="32" cy="12" r="4" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+              <circle cx="8" cy="12" r="4" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+              <path d="M36 24C36 20.7 33.3 18 30 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+              <path d="M4 24C4 20.7 6.7 18 10 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3 class="whyus-card__title">Professional Team</h3>
+          <p class="whyus-card__desc">Didukung tenaga teknis yang memahami bidang teknologi informasi dan jaringan komputer.</p>
+        </div>
+
+        <!-- Advantage 2 -->
+        <div class="whyus-card">
+          <div class="whyus-card__number">02</div>
+          <div class="whyus-card__icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="16" stroke="currentColor" stroke-width="2"/>
+              <polyline points="20,8 20,20 28,24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="20" cy="20" r="2" fill="currentColor"/>
+              <path d="M34 10L36 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+              <path d="M36 6L38 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3 class="whyus-card__title">Fast Response</h3>
+          <p class="whyus-card__desc">Memberikan respons cepat dalam menangani kebutuhan dan kendala pelanggan.</p>
+        </div>
+
+        <!-- Advantage 3 -->
+        <div class="whyus-card">
+          <div class="whyus-card__number">03</div>
+          <div class="whyus-card__icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M20 4L36 12V22C36 30 28 36 20 38C12 36 4 30 4 22V12L20 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M14 20L18 24L26 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="whyus-card__title">Reliable Solutions</h3>
+          <p class="whyus-card__desc">Menghadirkan solusi teknologi yang disesuaikan dengan kebutuhan pelanggan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PORTOFOLIO SECTION ========== -->
+  <section class="section section--portofolio" id="portofolio">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__badge">Portofolio</span>
+        <h2 class="section__title">Proyek yang Telah <span class="text-gradient">Kami Selesaikan</span></h2>
+        <p class="section__subtitle">Lihat beberapa proyek terbaik kami yang telah membantu klien mencapai tujuan digital mereka.</p>
+      </div>
+
+      <div class="portfolio__grid">
+        <!-- Portfolio Card 1 -->
+        <article class="portfolio-card">
+          <div class="portfolio-card__image">
+            <svg viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="600" height="400" fill="#0a1628"/>
+              <!-- Office with network lines -->
+              <rect x="80" y="180" width="440" height="160" rx="4" fill="#0f1d33" stroke="#1e3a5f" stroke-width="1"/>
+              <!-- Desks -->
+              <rect x="120" y="240" width="80" height="40" rx="3" fill="#142745"/>
+              <rect x="260" y="240" width="80" height="40" rx="3" fill="#142745"/>
+              <rect x="400" y="240" width="80" height="40" rx="3" fill="#142745"/>
+              <!-- Monitors -->
+              <rect x="135" y="210" width="50" height="30" rx="2" fill="#0d1929" stroke="#2563eb" stroke-width="1"/>
+              <rect x="275" y="210" width="50" height="30" rx="2" fill="#0d1929" stroke="#2563eb" stroke-width="1"/>
+              <rect x="415" y="210" width="50" height="30" rx="2" fill="#0d1929" stroke="#60a5fa" stroke-width="1"/>
+              <!-- Screen glow -->
+              <rect x="140" y="215" width="40" height="10" rx="1" fill="#2563eb" opacity="0.3"/>
+              <rect x="280" y="215" width="40" height="10" rx="1" fill="#2563eb" opacity="0.3"/>
+              <rect x="420" y="215" width="40" height="10" rx="1" fill="#60a5fa" opacity="0.3"/>
+              <!-- Network cables on ceiling -->
+              <line x1="160" y1="180" x2="160" y2="140" stroke="#2563eb" stroke-width="1.5" opacity="0.5"/>
+              <line x1="300" y1="180" x2="300" y2="140" stroke="#2563eb" stroke-width="1.5" opacity="0.5"/>
+              <line x1="440" y1="180" x2="440" y2="140" stroke="#2563eb" stroke-width="1.5" opacity="0.5"/>
+              <line x1="100" y1="140" x2="500" y2="140" stroke="#60a5fa" stroke-width="2" opacity="0.4"/>
+              <!-- Switch hub -->
+              <rect x="270" y="130" width="60" height="20" rx="4" fill="#0d1929" stroke="#1e3a5f" stroke-width="1"/>
+              <circle cx="285" cy="140" r="3" fill="#22c55e" opacity="0.8"/>
+              <circle cx="295" cy="140" r="3" fill="#2563eb" opacity="0.8"/>
+              <circle cx="305" cy="140" r="3" fill="#22c55e" opacity="0.8"/>
+              <circle cx="315" cy="140" r="3" fill="#60a5fa" opacity="0.8"/>
+              <!-- Ceiling to switch -->
+              <line x1="300" y1="100" x2="300" y2="130" stroke="#2563eb" stroke-width="1.5" opacity="0.6"/>
+              <!-- Floor pattern -->
+              <line x1="80" y1="300" x2="520" y2="300" stroke="#1e3a5f" stroke-width="0.5" opacity="0.3"/>
+              <line x1="80" y1="320" x2="520" y2="320" stroke="#1e3a5f" stroke-width="0.5" opacity="0.2"/>
+              <!-- Data flow particles -->
+              <circle cx="160" cy="160" r="2" fill="#2563eb" opacity="0.6"/>
+              <circle cx="300" cy="115" r="2" fill="#60a5fa" opacity="0.6"/>
+              <circle cx="440" cy="165" r="2" fill="#2563eb" opacity="0.6"/>
+            </svg>
+            <span class="portfolio-card__category">Network Infrastructure</span>
+          </div>
+          <div class="portfolio-card__body">
+            <h3 class="portfolio-card__title">Office Network Installation</h3>
+            <p class="portfolio-card__desc">Instalasi jaringan komputer untuk kebutuhan kantor dan infrastruktur komunikasi.</p>
+          </div>
+        </article>
+
+        <!-- Portfolio Card 2 -->
+        <article class="portfolio-card">
+          <div class="portfolio-card__image">
+            <svg viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="600" height="400" fill="#0a1628"/>
+              <!-- Server room -->
+              <rect x="60" y="80" width="120" height="260" rx="6" fill="#0f1d33" stroke="#1e3a5f" stroke-width="1"/>
+              <rect x="240" y="80" width="120" height="260" rx="6" fill="#0f1d33" stroke="#1e3a5f" stroke-width="1"/>
+              <rect x="420" y="80" width="120" height="260" rx="6" fill="#0f1d33" stroke="#1e3a5f" stroke-width="1"/>
+              <!-- Rack 1 servers -->
+              <rect x="75" y="100" width="90" height="30" rx="3" fill="#0d1929" stroke="#1e3a5f" stroke-width="0.5"/>
+              <rect x="75" y="140" width="90" height="30" rx="3" fill="#0d1929" stroke="#1e3a5f" stroke-width="0.5"/>
+              <rect x="75" y="180" width="90" height="30" rx="3" fill="#0d1929" stroke="#1e3a5f" stroke-width="0.5"/>
+              <rect x="75" y="220" width="90" height="30" rx="3" fill="#0d1929" stroke="#1e3a5f" stroke-width="0.5"/>
+              <rect x="75" y="260" width="90" height="30" rx="3" fill="#0d1929" stroke="#1e3a5f" stroke-width="0.5"/>
+              <!-- Rack 1 LEDs -->
+              <circle cx="150" cy="112" r="3" fill="#22c55e" opacity="0.8"/>
+              <circle cx="150" cy="152" r="3" fill="#22c55e" opacity="0.8"/>
+              <circle cx="150" cy="192" r="3" fill="#2563eb" opacity="0.8"/>
+              <circle cx="150" cy="232" r="3" fill="#22c55e" opacity="0.8"/>
+              <circle cx="150" cy="272" r="3" fill="#f59e0b" opacity="0.8"/>
+              <!-- Rack 2 servers -->
+              <rect x="255" y="100" width="90" height="30" rx="3" fill="#0d1929" stroke="#1e3a5f" stroke-width="0.5"/>
+              <rect x="255" y="140" width="90" height="30" rx="3" fill="#0d1929" stroke="#1e3a5f" stroke-width="0.5"/>
+              <rect x="255" y="180" width="90" height="30" rx="3" fill="#0d1929" stroke="#1e3a5f" stroke-width="0.5"/>
+              <rect x="255" y="220" width="90" height="30" rx="3" fill="#0d1929" stroke="#1e3a5f" stroke-width="0.5"/>
+              <rect x="255" y="260" width="90" height="30" rx="3" fill="#0d1929" stroke="#1e3a5f" stroke-width="0.5"/>
+              <!-- Rack 2 LEDs -->
+              <circle cx="330" cy="112" r="3" fill="#22c55e" opacity="0.8"/>
+              <circle cx="330" cy="152" r="3" fill="#2563eb" opacity="0.8"/>
+              <circle cx="330" cy="192" r="3" fill="#22c55e" opacity="0.8"/>
+              <circle cx="330" cy="232" r="3" fill="#22c55e" opacity="0.8"/>
+              <circle cx="330" cy="272" r="3" fill="#22c55e" opacity="0.8"/>
+              <!-- Rack 3 servers -->
+              <rect x="435" y="100" width="90" height="30" rx="3" fill="#0d1929" stroke="#1e3a5f" stroke-width="0.5"/>
+              <rect x="435" y="140" width="90" height="30" rx="3" fill="#0d1929" stroke="#1e3a5f" stroke-width="0.5"/>
+              <rect x="435" y="180" width="90" height="30" rx="3" fill="#0d1929" stroke="#1e3a5f" stroke-width="0.5"/>
+              <rect x="435" y="220" width="90" height="30" rx="3" fill="#0d1929" stroke="#1e3a5f" stroke-width="0.5"/>
+              <rect x="435" y="260" width="90" height="30" rx="3" fill="#0d1929" stroke="#1e3a5f" stroke-width="0.5"/>
+              <!-- Rack 3 LEDs -->
+              <circle cx="510" cy="112" r="3" fill="#2563eb" opacity="0.8"/>
+              <circle cx="510" cy="152" r="3" fill="#22c55e" opacity="0.8"/>
+              <circle cx="510" cy="192" r="3" fill="#22c55e" opacity="0.8"/>
+              <circle cx="510" cy="232" r="3" fill="#60a5fa" opacity="0.8"/>
+              <circle cx="510" cy="272" r="3" fill="#22c55e" opacity="0.8"/>
+              <!-- Cables between racks -->
+              <path d="M180 120Q210 120 210 150Q210 180 240 180" stroke="#2563eb" stroke-width="1.5" opacity="0.4"/>
+              <path d="M360 150Q390 150 390 180Q390 210 420 200" stroke="#60a5fa" stroke-width="1.5" opacity="0.4"/>
+              <!-- Floor -->
+              <rect x="40" y="350" width="520" height="4" rx="2" fill="#1e3a5f" opacity="0.3"/>
+              <!-- Cool air -->
+              <path d="M200 360Q200 370 210 375" stroke="#60a5fa" stroke-width="1" opacity="0.2"/>
+              <path d="M380 360Q380 370 390 375" stroke="#60a5fa" stroke-width="1" opacity="0.2"/>
+            </svg>
+            <span class="portfolio-card__category">Server Management</span>
+          </div>
+          <div class="portfolio-card__body">
+            <h3 class="portfolio-card__title">Server Room Setup</h3>
+            <p class="portfolio-card__desc">Penataan perangkat server dan infrastruktur jaringan untuk mendukung kebutuhan operasional.</p>
+          </div>
+        </article>
+
+        <!-- Portfolio Card 3 -->
+        <article class="portfolio-card">
+          <div class="portfolio-card__image">
+            <svg viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="600" height="400" fill="#0a1628"/>
+              <!-- Browser window -->
+              <rect x="80" y="60" width="440" height="280" rx="8" fill="#0f1d33" stroke="#1e3a5f" stroke-width="1.5"/>
+              <!-- Browser toolbar -->
+              <rect x="80" y="60" width="440" height="36" rx="8" fill="#142745"/>
+              <rect x="80" y="84" width="440" height="12" fill="#142745"/>
+              <!-- Traffic lights -->
+              <circle cx="102" cy="78" r="5" fill="#ef4444" opacity="0.8"/>
+              <circle cx="118" cy="78" r="5" fill="#f59e0b" opacity="0.8"/>
+              <circle cx="134" cy="78" r="5" fill="#22c55e" opacity="0.8"/>
+              <!-- URL bar -->
+              <rect x="160" y="70" width="260" height="18" rx="9" fill="#0d1929"/>
+              <rect x="170" y="76" width="80" height="6" rx="3" fill="#1e3a5f"/>
+              <!-- Page content: Hero -->
+              <rect x="100" y="110" width="180" height="12" rx="2" fill="#2563eb" opacity="0.6"/>
+              <rect x="100" y="128" width="140" height="8" rx="2" fill="#1e3a5f"/>
+              <rect x="100" y="142" width="160" height="8" rx="2" fill="#1e3a5f" opacity="0.6"/>
+              <rect x="100" y="160" width="80" height="22" rx="11" fill="#2563eb" opacity="0.4"/>
+              <!-- Page content: Image placeholder -->
+              <rect x="340" y="110" width="160" height="80" rx="4" fill="#142745"/>
+              <circle cx="420" cy="145" r="20" stroke="#2563eb" stroke-width="1" opacity="0.3"/>
+              <circle cx="420" cy="145" r="8" fill="#2563eb" opacity="0.2"/>
+              <!-- Cards -->
+              <rect x="100" y="200" width="120" height="70" rx="4" fill="#142745" stroke="#1e3a5f" stroke-width="0.5"/>
+              <rect x="240" y="200" width="120" height="70" rx="4" fill="#142745" stroke="#1e3a5f" stroke-width="0.5"/>
+              <rect x="380" y="200" width="120" height="70" rx="4" fill="#142745" stroke="#1e3a5f" stroke-width="0.5"/>
+              <!-- Card content lines -->
+              <rect x="112" y="215" width="40" height="6" rx="2" fill="#2563eb" opacity="0.4"/>
+              <rect x="112" y="228" width="80" height="4" rx="2" fill="#1e3a5f" opacity="0.5"/>
+              <rect x="112" y="238" width="60" height="4" rx="2" fill="#1e3a5f" opacity="0.3"/>
+              <rect x="252" y="215" width="40" height="6" rx="2" fill="#60a5fa" opacity="0.4"/>
+              <rect x="252" y="228" width="80" height="4" rx="2" fill="#1e3a5f" opacity="0.5"/>
+              <rect x="252" y="238" width="60" height="4" rx="2" fill="#1e3a5f" opacity="0.3"/>
+              <rect x="392" y="215" width="40" height="6" rx="2" fill="#2563eb" opacity="0.4"/>
+              <rect x="392" y="228" width="80" height="4" rx="2" fill="#1e3a5f" opacity="0.5"/>
+              <rect x="392" y="238" width="60" height="4" rx="2" fill="#1e3a5f" opacity="0.3"/>
+              <!-- Footer line -->
+              <rect x="100" y="300" width="400" height="1" fill="#1e3a5f" opacity="0.3"/>
+              <rect x="100" y="310" width="100" height="6" rx="2" fill="#1e3a5f" opacity="0.3"/>
+            </svg>
+            <span class="portfolio-card__category">Web Development</span>
+          </div>
+          <div class="portfolio-card__body">
+            <h3 class="portfolio-card__title">Business Website Development</h3>
+            <p class="portfolio-card__desc">Pembuatan website promosi untuk memperkenalkan layanan dan identitas bisnis.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== KONTAK SECTION ========== -->
+  <section class="section section--kontak" id="kontak">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__badge">Hubungi Kami</span>
+        <h2 class="section__title">Siap Memulai <span class="text-gradient">Proyek Anda</span>?</h2>
+        <p class="section__subtitle">Hubungi tim kami untuk konsultasi gratis dan wujudkan solusi teknologi terbaik untuk bisnis Anda.</p>
+      </div>
+
+      <div class="contact__grid">
+        <!-- Contact Info -->
+        <div class="contact__info">
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="contact-item__title">Alamat</h4>
+              <p class="contact-item__text">Jl. Veteran No. 123, Banjarsari,<br>Surakarta, Jawa Tengah, Indonesia</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="contact-item__title">WhatsApp</h4>
+              <p class="contact-item__text">+62 857-0052-2135</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="contact-item__title">Jam Kerja</h4>
+              <p class="contact-item__text">Senin – Sabtu: 08.00 – 17.00 WIB</p>
+            </div>
+          </div>
+
+          <a href="https://wa.me/6285700522135?text=Halo%20SkyNet%20Solusindo%2C%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20IT%20dan%20jaringan." target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg contact__wa-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Chat via WhatsApp
+          </a>
+        </div>
+
+        <!-- Contact visual / Map placeholder -->
+        <div class="contact__visual">
+          <div class="contact__map">
+            <svg viewBox="0 0 500 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="500" height="360" rx="12" fill="#0f1d33"/>
+              <!-- Grid lines (map roads) -->
+              <line x1="0" y1="90" x2="500" y2="90" stroke="#1e3a5f" stroke-width="1" opacity="0.3"/>
+              <line x1="0" y1="180" x2="500" y2="180" stroke="#1e3a5f" stroke-width="1.5" opacity="0.4"/>
+              <line x1="0" y1="270" x2="500" y2="270" stroke="#1e3a5f" stroke-width="1" opacity="0.3"/>
+              <line x1="125" y1="0" x2="125" y2="360" stroke="#1e3a5f" stroke-width="1" opacity="0.3"/>
+              <line x1="250" y1="0" x2="250" y2="360" stroke="#1e3a5f" stroke-width="1.5" opacity="0.4"/>
+              <line x1="375" y1="0" x2="375" y2="360" stroke="#1e3a5f" stroke-width="1" opacity="0.3"/>
+              <!-- City blocks -->
+              <rect x="140" y="100" width="90" height="65" rx="3" fill="#142745" opacity="0.5"/>
+              <rect x="270" y="100" width="90" height="65" rx="3" fill="#142745" opacity="0.5"/>
+              <rect x="140" y="200" width="90" height="55" rx="3" fill="#142745" opacity="0.5"/>
+              <rect x="270" y="200" width="90" height="55" rx="3" fill="#142745" opacity="0.5"/>
+              <!-- Location pin -->
+              <g transform="translate(250, 150)">
+                <circle r="24" fill="#2563eb" opacity="0.15"/>
+                <circle r="14" fill="#2563eb" opacity="0.25"/>
+                <path d="M0 -20C-7.7 -20 -14 -13.3 -14 -6C-14 3.5 0 16 0 16S14 3.5 14 -6C14 -13.3 7.7 -20 0 -20Z" fill="#2563eb"/>
+                <circle cy="-7" r="5" fill="white"/>
+              </g>
+              <!-- Label -->
+              <rect x="285" y="138" width="140" height="28" rx="6" fill="#0d1929" stroke="#2563eb" stroke-width="1"/>
+              <text x="310" y="157" fill="#dbeafe" font-size="11" font-family="Plus Jakarta Sans, sans-serif" font-weight="600">SkyNet Solusindo</text>
+              <!-- Compass -->
+              <circle cx="440" cy="50" r="20" fill="#0d1929" stroke="#1e3a5f" stroke-width="1"/>
+              <text x="436" y="42" fill="#60a5fa" font-size="10" font-family="Plus Jakarta Sans, sans-serif" font-weight="700">N</text>
+              <line x1="440" y1="45" x2="440" y2="60" stroke="#1e3a5f" stroke-width="1"/>
+              <line x1="433" y1="52" x2="447" y2="52" stroke="#1e3a5f" stroke-width="1"/>
+            </svg>
+            <p class="contact__map-label">Surakarta, Jawa Tengah</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__grid">
+        <!-- Brand -->
+        <div class="footer__brand">
+          <a href="#home" class="header__logo">
+            <span class="logo__icon">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="8" fill="url(#logo-grad-f)"/>
+                <path d="M8 20L12 12L16 18L20 10L24 20" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="12" r="2" fill="white" opacity="0.6"/>
+                <circle cx="20" cy="10" r="2" fill="white" opacity="0.6"/>
+                <defs>
+                  <linearGradient id="logo-grad-f" x1="0" y1="0" x2="32" y2="32">
+                    <stop stop-color="#2563eb"/>
+                    <stop offset="1" stop-color="#0a1628"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+            <div class="logo__text">
+              <span class="logo__name">SkyNet<strong>Solusindo</strong></span>
+            </div>
+          </a>
+          <p class="footer__desc">SkyNet Solusindo adalah perusahaan yang bergerak di bidang IT dan Teknik Jaringan Komputer dan Telekomunikasi (TJKT), menyediakan solusi teknologi andal untuk kebutuhan bisnis Anda.</p>
+          <p class="footer__location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:4px">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            Jl. Veteran No. 123, Banjarsari, Surakarta, Jawa Tengah
+          </p>
+        </div>
+
+        <!-- Layanan -->
+        <div class="footer__col">
+          <h4 class="footer__heading">Layanan</h4>
+          <ul class="footer__links">
+            <li><a href="#layanan">Network Installation</a></li>
+            <li><a href="#layanan">Network Configuration</a></li>
+            <li><a href="#layanan">Maintenance & Repair</a></li>
+            <li><a href="#layanan">Website Development</a></li>
+          </ul>
+        </div>
+
+        <!-- Navigasi -->
+        <div class="footer__col">
+          <h4 class="footer__heading">Navigasi</h4>
+          <ul class="footer__links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#proses">Proses</a></li>
+            <li><a href="#jaringan">Topologi</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontak -->
+        <div class="footer__col">
+          <h4 class="footer__heading">Kontak</h4>
+          <ul class="footer__links">
+            <li>+62 857-0052-2135</li>
+            <li>Surakarta, Jawa Tengah</li>
+          </ul>
+          <a href="https://wa.me/6285700522135?text=Halo%20SkyNet%20Solusindo%2C%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20IT%20dan%20jaringan." target="_blank" rel="noopener noreferrer" class="btn btn--primary footer__wa-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 SkyNet Solusindo. All Rights Reserved.</p>
+        <p class="footer__tagline">Beyond Connection. We Build Your Digital Future.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== FLOATING WHATSAPP BUTTON ========== -->
+  <a href="https://wa.me/6285700522135?text=Halo%20SkyNet%20Solusindo%2C%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20IT%20dan%20jaringan." target="_blank" rel="noopener noreferrer" class="floating-wa" id="floatingWa" aria-label="Konsultasi WhatsApp SkyNet Solusindo">
+    <span class="floating-wa__pulse" aria-hidden="true"></span>
+    <span class="floating-wa__icon">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </span>
+    <span class="floating-wa__tooltip">Konsultasi Gratis</span>
+  </a>
+
+  <script src="script.js?v=global-live"></script>
+</body>
+</html>
